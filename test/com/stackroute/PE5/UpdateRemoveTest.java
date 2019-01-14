@@ -1,4 +1,11 @@
-package com.PE5;
+/*Write a Java program to update specific array element
+by given element and empty the array list .
+Input: [Apple, Grape, Melon, Berry]
+Output: [Kiwi, Grape, Mango, Berry]
+Array list after removing all elements []*/
+
+
+package com.stackroute.PE5;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
