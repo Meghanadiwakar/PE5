@@ -28,9 +28,9 @@ public class UpdateRemoveTest {
         obj = null;
 
     }
-
+//test for success//
     @Test
-    public void editlist()
+    public void editlistsuccess()
     {
         List<String> result = new ArrayList<>();
         result.add("Apple");
@@ -48,6 +48,41 @@ public class UpdateRemoveTest {
         assertNotEquals(expectedList,obj.editlist(result,"Kiwi"));
     }
 
+//test for failure of the list//
+    @Test
+    public void editlistfailure()
+    {
+        List<String> result = new ArrayList<>();
+        result.add("Apple");
+        result.add("Grape");
+        result.add("Melon");
+        result.add("Berry");
+
+        List<String> expectedList = new ArrayList<>();
+
+        expectedList.add("Apple");
+        expectedList.add("Grape");
+        expectedList.add("Melon");
+        expectedList.add("Berry");
+
+        assertEquals(expectedList,obj.editlist(result,"Kiwi"));
     }
+
+//test for an empty list and null result//
+
+    @Test
+    public void editlistnull()
+    {
+        List<String> result = new ArrayList<>();
+        result.add("");
+
+        List<String> expectedList = new ArrayList<>();
+
+        expectedList.add(null);
+
+        assertNotEquals(expectedList,obj.editlist(result,"Kiwi"));
+    }
+
+}
 
 

@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 public class UpdateRemove{
+    //method to update specific element in the array//
     public List<String> editlist(List<String> inputString, String keyword) {
         if (inputString!=null) {
             List<String> string = new ArrayList<>();
@@ -25,6 +26,7 @@ public class UpdateRemove{
         }
         return null;
     }
+    //method to empty the array//
     public List<String> toEmptyArrayList(List<String> inputString) {
         inputString.clear();
         return inputString;
